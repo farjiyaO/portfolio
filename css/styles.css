@@ -1,0 +1,20 @@
+:root {
+    --color-light-red: #F2768F;
+    --color-red:#F50303;
+    --color-dark-red: #2D1E2F;
+    --color-hover: #BF0F0F
+}
+
+/* defeat box model */
+* {
+    box-sizing: border-box;
+}
+
+.content-nav{
+    background-color: var(--color-light-red);
+
+}
+.footer{
+    background-color: var(--color-dark-red);
+    line-height: 1.15rem;
+}
