@@ -18,3 +18,16 @@
     background-color: var(--color-dark-red);
     line-height: 1.15rem;
 }
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: #ffffff;
+    background-color: var(--color-red);
+}
+
+
+@media screen and (min-width: 48em) {
+
+}

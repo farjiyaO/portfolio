@@ -1,21 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--css link-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>FarjiyaTech </title>
 </head>
+
 <body>
     <header role="heading">
-        <h1>Welcome to farjiyatech</h1>
-        <h3>Consistency is the key</h3>
+        <div class="nav-menu">
+            <!--adds the navigation of the page-->
+            <nav class="navbar navbar-expand-lg pt-0" role="navigation">
+                <div class="container-fluid content-nav">
+                    <a class="navbar-brand" href="index.html"> <img class="rounded-circle img-thumbnai"
+                            src="images/Screenshot 2023-03-08 at 10.40.37 AM.png" alt="company logo" height="100px"
+                            width="100px"></a>
+
+                    <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                        <i class="fa fa-navicon" style="font-size:36px"></i></button>
+
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav text-center py-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-3" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-3" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black fs-3" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--adds the navigation of the page-->
+        </div>
     </header>
-    <main>
+    <!-- holds the main content of the webpage-->
+    <main class="">
+        <div class="mt-4 mb-4">
+            <h1 class="primary text-center">Welcome to farjiyatech</h1>
+            <h4 class="text-center fs-5">Consistency is the key</h3>
+        </div>
+        <div class="container">
+            <!--a section for the carosoul-->
+            <section>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/pexels-pixabay-262438.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile-picture.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="circle-icon text-center">
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                    <i class="fa fa-circle"></i>
+                </div>
+            </section>
+            
+            <section>
+                <p class="text-center m-auto my-4">Welcome to <em class="fst-italic">farjiyatech</em> , your
+                    one-stop-shop
+                    for all your digital needs. </p>
+                <p class="text-center my-5">We specialize in website building, logo design, UX design, and marketing
+                    strategies
+                    that can help you establish a strong online presence and stand out from the competition.</p>
+
+            </section>
+            <section>
+                <h3 class="my-3">Our Services</h3>
+                <div class="row mx-2 justify-content-center pb-1">
+                    <div class="card one" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Website buildings:</h5>
+                            <p class="card-text">
+                                We create websites that are not only visually stunning but also highly functional and
+                                user-friendly. Our team of experts uses the latest technology and trends to design and
+                                develop websites that deliver an exceptional user experience. From custom designs to
+                                e-commerce solutions, we’ve got you covered.
+                            </p>
+                            <a href="#" class="btn btn-primary"> Check Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="card two" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Logo Design:</h5>
+                            <p class="card-text">Your logo is the face of your business, and we understand the
+                                importance of
+                                creating a strong brand identity. Our talented designers work closely with you to create
+                                a
+                                unique and memorable logo that represents your brand’s values and communicates your
+                                message
+                                effectively.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+                    <div class="card three" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">UX Design:</h5>
+                            <p class="card-text">User experience (UX) is crucial to the success of your website. We make
+                                sure that your website is designed to provide a seamless and intuitive user experience.
+                                Our
+                                team conducts user research, designs wireframes, and creates prototypes to ensure that
+                                your
+                                website is not only visually appealing but also easy to use and navigate.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card four" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Strategies:</h5>
+                            <p class="card-text">We understand that having a great website is not enough; you also need
+                                to
+                                reach your target audience. That’s why we offer a range of digital marketing strategies,
+                                including SEO, PPC, and social media marketing, to help you increase your online
+                                visibility,
+                                drive traffic to your website, and grow your business.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <p class="my-5 fs-5">
+                    At <em> farjiyaTech,</em> we are committed to providing you with exceptional service and results.
+                    Contact us today
+                    to learn more about how we can help you achieve your digital goals.
+                </p>
+
+            </section>
+
+
+        </div>
 
     </main>
-    <footer>
+    <!--adds footer for the webpage-->
+    <footer class="container-fluid text-light py-3 footer" data-bs-theme="dark">
+        <div class="container mx-5">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <p>&copy; All the rights Preserved. </p>
+                    <p> All web content were created from <a href="https://chat.openai.com"> ChatGpt</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-center">Check our social media site:</p>
+                    <p class="icons text-center fs-1">
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="fa fa-youtube-play"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
