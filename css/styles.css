@@ -1,6 +1,6 @@
 :root {
-    --color-light-red: #F2768F;
-    --color-red:#F50303;
+    --color-light-red: rgb(242, 118, 143);
+    --color-red: #F50303;
     --color-dark-red: #2D1E2F;
     --color-hover: #BF0F0F
 }
@@ -10,31 +10,45 @@
     box-sizing: border-box;
 }
 
-.content-nav{
+body {
+    margin-bottom: 140px;
+}
+
+.content-nav {
     background-color: var(--color-light-red);
 
 }
 
-.mission-vision{
+.mission-vision {
     background-color: var(--color-light-red);
 }
-.value{
-    background-color: rgba(255,0, 0, .2);
+
+.value {
+    background-color: rgba(255, 0, 0, .2);
 }
-.footer{
+
+.form-content {
+    background-color: rgba(242, 118, 143, 0.5)
+}
+
+.footer {
     background-color: var(--color-dark-red);
     line-height: 1.15rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
-.nav-link{
+
+.nav-link {
     color: black;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #ffffff;
     background-color: var(--color-red);
 }
 
 
-@media screen and (min-width: 48em) {
-
-}
+@media screen and (min-width: 48em) {}

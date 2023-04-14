@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--css link-->
-
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>Contact - farjiyatech </title>
+    <title> 👩🏻‍💻 Contact - farjiyatech </title>
 </head>
 
 <body>
@@ -27,29 +26,29 @@
             <!--adds the navigation of the page-->
             <nav class="navbar navbar-expand-lg pt-0" role="navigation">
                 <div class="container-fluid content-nav">
-                    <a class="navbar-brand" href="index.html"> <img class="rounded-circle img-thumbnai"
-                            src="images/company-logo.png" alt="company logo" height="60"
-                            width="60"></a>
+                    <a class="navbar-brand" href="index.html" aria-label="This link reloads the home page"> <img
+                            class="rounded-circle img-thumbnai" src="images/company-logo.png"
+                            alt="An image of company logo" height="60" width="60"></a>
 
                     <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"> </span>
-                        <i class="fa fa-navicon" style="font-size:36px"></i></button>
+                        <i class="fa fa-navicon fs-1"></i></button>
 
                     <div class="collapse navbar-collapse " id="navbarNav">
                         <ul class="navbar-nav text-center py-1">
                             <li class="nav-item">
-                                <a class="nav-link fs-3" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link fs-3" aria-current="page" href="index.html" aria-label="Goes to the home page">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="about.html">About</a>
+                                <a class="nav-link fs-3" href="about.html" aria-label="Goes to the about page">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="contact.html">Contact</a>
+                                <a class="nav-link fs-3" href="contact.html" aria-label="Goes to the contact page">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="https://farjiyao.github.io/bakeryshop-mtm6201/ ">Work</a>
+                                <a class="nav-link fs-3" href="https://farjiyao.github.io/bakeryshop-mtm6201/" aria-label="Goes to previous work page">Work</a>
                             </li>
                         </ul>
                     </div>
@@ -58,8 +57,11 @@
             <!--adds the navigation of the page-->
         </div>
     </header>
+
+
+
     <!--holds the main content of the page-->
-    <main class="mb-5">
+    <main class="">
         <div class="container mt-5 mb-5">
             <div class="row ">
                 <!--a section to hold the contact infos-->
@@ -73,22 +75,23 @@
                     </div>
                     <div class="contact-info mt-5">
                         <h2 class="fs-3">Ways to connect with me</h2>
-                        <ul class="mx-5">
-                            <li>613-555-5555</li>
-                            <li>bent0101@algonquinlive.com</li>
-                            <li>230 Woodroffe Ave, A1E B2G, Ottawa, ON</li>
+                        <ul class="mx-5" itemscope itemtype="https://schema.org/Person">
+                            <li itemprop="contactPoint">613-555-5555</li>
+                            <li itemprop="email">bent0101@algonquinlive.com</li>
+                            <li itemprop="address">230 Woodroffe Ave, A1E B2G, Ottawa, ON</li>
                         </ul>
                     </div>
-                    <div class="loc mt-5" >
+                    <div class="loc mt-5 mb-5">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.794823126314!2d-75.81035758444628!3d45.352953879099815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00e77e7bc705%3A0xcd769fee89fbe25f!2s230%20Woodridge%20Crescent%2C%20Nepean%2C%20ON%20K2B%208G2!5e0!3m2!1sen!2sca!4v1671577814532!5m2!1sen!2sca"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"></iframe>
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            width="100%"></iframe>
                     </div>
                 </section>
                 <!--a section to hold the contact infos-->
-                <div class="col-md-6 form-content bg-warning mb-5">
+                <div class="col-md-6 form-content mb-5">
 
-                    <form action="mailto:farjiya.oishe21@gmail.com" class="px-2 py-4" method="POST"
+                    <form action="mailto:farjiya.oishe21@gmail.com" class="py-4 mb-3" method="POST"
                         enctype="multipart/form-data" name="EmailForm">
                         <div class="mb-3">
                             <label for="name" class="form-label">Full Name</label>
@@ -107,7 +110,9 @@
                             <label for="msg" class="form-label">Message</label>
                             <textarea class="form-control" id="msg" rows="3"></textarea>
                         </div>
-                        <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+                        <div class="mb-3 text-center">
+                            <input class="btn btn-danger btn-sm" type="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
 
@@ -115,30 +120,28 @@
         </div>
     </main>
     <!--adds footer of the webpage-->
-    <footer class="container-fluid text-light py-3 footer" data-bs-theme="dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-center">&copy; All the rights Preserved. </p>
-                    <p class="text-center"> Contents were created by<a href="https://chat.openai.com"> ChatGpt</a>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-center">Check our social media site:</p>
-                    <p class="icons text-center fs-1">
-                        <i class="fa fa-facebook-square"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-whatsapp"></i>
-                        <i class="fa fa-youtube-play"></i>
-                    </p>
-                </div>
-                <a href="#top" class="text-center"> Back to top
-                    <i class="fa fa-arrow-up fs-4 text-white">
-                    </i>
-                </a>
-            </div>
+
+    <footer role="contentinfo">
+        <div class="text-light text-center mt-5 py-3 footer">
+            <p>&copy; All the rights Preserved. </p>
+            <p> Contents were created by
+                <a href="https://chat.openai.com" aria-label=" this link goes to ChatGPT website"> ChatGpt</a>
+            </p>
+            <p>Check our social media site:</p>
+            <p class="icons fs-1">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-youtube-play"></i>
+            </p>
+            <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
+                <i class="fa fa-arrow-up fs-4 text-white"></i>
+            </a>
         </div>
     </footer>
+
+
+
 
 
 
