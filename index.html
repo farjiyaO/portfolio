@@ -76,14 +76,30 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/img-12.png" class="d-block w-100" alt="An image of settings">
+                            <picture>
+                                <source srcset="images/img-12-720_x_576.png 1x,
+                                                images/img-12-960_x_768.png 2x,
+                                                images/img-12-1280_x_1024.png 3x" media="(min-width: 760px)" />
+                                <img src="images/img-12-960_x_768.png" class="d-block w-100" alt="An image of settings">
+                            </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/img-1.jpg" class="d-block w-100" alt="An image of the company">
+                            <picture>
+                                <source srcset="images/img-12-720_x_576.jpg 1x,
+                                                images/img-1-960_x_768.jpg 2x,
+                                                images/img-1-1280_x_1024.jpg 3x" media="(min-width: 760px)" />
+                                <img src="images/img-1-960_x_768.jpg" class="d-block w-100"
+                                    alt="An image of the company">
+                            </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/img-6.JPG" class="d-block w-100"
+                            <picture>
+                                <source srcset="images/img-6-720_x_576.jpg 1x,
+                                                images/img-6-960_x_768.jpg 2x,
+                                                images/img-6-1280_x_1024.jpg 3x" media="(min-width: 760px)" />
+                                <img src="images/img-6-960_x_768.jpg" class="d-block w-100"
                                 alt="An image of the front yard of the company">
+                            </picture>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -126,38 +142,51 @@
                     <!-- A card for website-->
                     <div class="card mb-5 mx-3 mx-md-2 mb-md-0 col-md rounded-0 p-0 shadow-sm">
                         <div class="my-3 mx-3">
-                            <img src="images/web-example.png" class="card-img-top border border-danger"
+                            <picture>
+                                <source srcset="images/web-example-480_x_401.png 1x,
+                                                images/web-example-640_x_535.png 2x,
+                                                images/web-example-720_x_602.png 3x" 
+                                        media="(min-width: 760px)" />
+                                        <img src="images/web-example-640_x_535.png" class="card-img-top border border-danger"
                                 alt="An image of the websites">
+                            </picture>
+                            
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Website buildings</h5>
-                            <p class="card-text">
+                            <p class="card-text mt-2 pb-5">
                                 We create websites that are not only visually stunning but also highly functional and
                                 user-friendly. Our team of experts uses the latest technology and trends to design and
                                 develop websites that deliver an exceptional user experience. From custom designs to
                                 e-commerce solutions, we’ve got you covered.
                             </p>
 
-                            <div class="text-center">
+                            <div class="text-center card-btn">
                                 <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="btn btn-danger"
                                     aria-label="Goes to the previous link">Learn
                                     more</a>
                             </div>
                         </div>
                     </div>
+
+
                     <!-- A card for ux design-->
                     <div class="card mb-5 mx-3 mx-md-2 mb-md-0 col-md rounded-0 p-0 shadow-sm">
                         <div class="my-3 mx-3 bg-warning">
-                            <img src="images/ux-design-2.png" class="card-img-top border border-danger"
+                            <picture>
+                                <source srcset="images/ux-design-2-480_x_401.png 1x,
+                                                images/ux-design-2-640_x_535.png 2x,
+                                                images/ux-design-2-720_x_602.png 3x" 
+                                        media="(min-width: 760px)" />
+                                <img src="images/ux-design-2-640_x_535.png" class="card-img-top border border-danger"
                                 alt="An image of the ux design example">
+                            </picture>
+                            
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">UX Design</h5>
-                            <p class="card-text">User experience (UX) is crucial to the success of your website. We make
-                                sure that your website is designed to provide a seamless and intuitive user experience.
-                                Our team conducts user research, designs wireframes, and creates prototypes to ensure
-                                that your website is not only visually appealing but also easy to use and navigate.</p>
-                            <div class="text-center">
+                            <p class="card-text mt-2 pb-5">User experience (UX) is crucial to the success of your website. We make sure that your website is designed to provide a seamless and intuitive user experience.Our team conducts user research, designs wireframes, and creates prototypes to ensure that your website is visually appealing and user-friendly</p>
+                            <div class="text-center card-btn">
                                 <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="btn btn-danger"
                                     aria-label="Goes to the previous link">Learn
                                     more</a>
@@ -167,17 +196,23 @@
                     <!-- A card for logos-->
                     <div class="card mb-5 mx-3 mx-md-2 mb-md-0 col-md rounded-0 p-0 shadow-sm">
                         <div class="bg-warning my-3 mx-3">
-                            <img src="images/logo-design-2.png" class="card-img-top border border-danger"
-                                alt="An image of the logo designs">
+                            <picture>
+                                <source srcset="images/logo-design-2-480_x_401.png 1x,
+                                                images/logo-design-2-640_x_535.png 2x,
+                                                images/logo-design-2-720_x_602.png 3x" 
+                                        media="(min-width: 760px)" />
+                                        <img src="images/logo-design-2-640_x_535.png" class="card-img-top border border-danger"
+                                        alt="An image of the logo designs">
+                            </picture>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center fs-2">Logo Design</h5>
-                            <p class="card-text">Your logo is the face of your business, and we understand the
+                            <p class="card-text mt-2 pb-5">Your logo is the face of your business, and we understand the
                                 importance of creating a strong brand identity. Our talented designers work closely with
                                 you to create a unique and memorable logo that represents your brand’s values and
                                 communicates your messageeffectively.
                             </p>
-                            <div class="text-center">
+                            <div class="text-center card-btn">
                                 <a href="https://farjiyao.github.io/bakeryshop-mtm6201/" class="btn btn-danger"
                                     aria-label="Goes to the previous link">Learn
                                     more</a>
@@ -189,7 +224,8 @@
 
             <section class="mt-5 text-center">
                 <p class="fs-6">
-                    At <em> farjiyaTech,</em> we are committed to providing you with exceptional service and results.Contact us today to learn more about how we can help you achieve your digital goals.
+                    At <em> farjiyaTech,</em> we are committed to providing you with exceptional service and
+                    results.Contact us today to learn more about how we can help you achieve your digital goals.
                 </p>
             </section>
         </div>
@@ -203,7 +239,8 @@
                 <div class="col-md-6 text-center">
                     <p>&copy; All the rights Preserved.</p>
                     <p>Contents were created by
-                        <a href="https://chat.openai.com" aria-label="This link goes to ChatGPT website" class="text-white"> ChatGpt</a>
+                        <a href="https://chat.openai.com" aria-label="This link goes to ChatGPT website"
+                            class="text-white"> ChatGpt</a>
                     </p>
                 </div>
                 <div class="col-md-6 text-center">

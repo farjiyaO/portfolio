@@ -27,8 +27,18 @@
 .value {
     background-color: rgba(255, 0, 0, .2);
 }
-.form-content {
+.content {
     background-color: rgba(242, 118, 143, 0.5)
+}
+
+.card-body{
+    position: relative;
+}
+.card-btn{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 35%;
+
 }
 
 .footer {
