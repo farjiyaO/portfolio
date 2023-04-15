@@ -10,34 +10,30 @@
     box-sizing: border-box;
 }
 
-body {
-    margin-bottom: 140px;
-}
 
 .content-nav {
     background-color: var(--color-light-red);
-
 }
 
+.contact{
+    padding-bottom: 5rem;
+}
 .mission-vision {
     background-color: var(--color-light-red);
 }
-
+.welcome{
+    color: var(--color-dark-red);
+}
 .value {
     background-color: rgba(255, 0, 0, .2);
 }
-
 .form-content {
     background-color: rgba(242, 118, 143, 0.5)
 }
 
 .footer {
     background-color: var(--color-dark-red);
-    line-height: 1.15rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    line-height: 1.15rem;   
 }
 
 

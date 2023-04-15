@@ -24,7 +24,7 @@
 
 <body>
     <!--adds header of the webpage-->
-    <header role="heading">
+    <header role="banner">
         <div class="nav-menu">
             <!--adds the navigation of the page-->
             <nav class="navbar navbar-expand-lg pt-0" role="navigation">
@@ -64,7 +64,7 @@
     <main class=" mb-5 mt-5" id="top">
         <!--a section for company history and about me-->
         <h1 class="primary mb-4 ps-2 heading text-center"> Get to know about us</h1>
-        <section>
+        <section class="my-5">
             <div class="container">
                 <div class="row">
                     <picture class="px-0 col-md-6">
@@ -72,21 +72,10 @@
                                         images/img-6-400_x_400.JPG 2x,
                                         images/img-6-680_x_680.JPG 3x" media="(min-width: 560px)" />
                         <img src="images/img-6-680_x_680.JPG" alt="An image of the company building"
-                            class="img-fluid rounded-circle" width="100%">
-
-                            <source srcset="images/img-6-400_x_400.JPG 1x,
-                                        images/img-6-400_x_400.JPG 2x,
-                                        images/img-6-680_x_680.JPG 3x" media="(min-width: 560px)" />
-                        <img src="images/img-6-680_x_680.JPG" alt="An image of the company building"
-                            class="img-fluid rounded-circle" width="100%">
-                            <source srcset="images/img-6-400_x_400.JPG 1x,
-                                        images/img-6-400_x_400.JPG 2x,
-                                        images/img-6-680_x_680.JPG 3x" media="(min-width: 560px)" />
-                        <img src="images/img-6-680_x_680.JPG" alt="An image of the company building"
-                            class="img-fluid rounded-circle" width="100%">
+                            class="img-fluid rounded-circle" aria-details="companyinfo" >
                     </picture>
 
-                    <div class="col-md team-member">
+                    <div class="col-md bg-warning" id="companyinfo">
                         <h3 class="heading py-3">Comapny Background</h3>
                         <hr>
                         <p>
@@ -110,46 +99,37 @@
                             online presence and grow their brand through effective digital marketing strategies.
                         </p>
                     </div>
-                    <div class="row">
-                        <div class="col-md team-member order-1 order-md-0">
-                            <h3 class="heading py-4">Farjiya BentaM</h3>
-                            <hr>
-                            <p>
-                                Farjiya is an immigrant from Bangladesh who came to Canada with a dream of becoming a
-                                web developer. She was determined to pursue her passion for digital media and create
-                                websites that are user-friendly, secure, and accessible by everyone.
-                                Despite facing many challenges as an immigrant, Farjiya worked hard to achieve her
-                                goals. She enrolled in Algonquin College's Interactive Media Design program, where she
-                                gained valuable experience in website design, UX design, and digital marketing.
-                            </p>
-                            <p>
-                                During her studies, Farjiya developed a deep understanding of the importance of putting
-                                the client's needs first. She recognized that every business is unique and requires a
-                                tailored solution that meets their specific needs. This led her to establish
-                                FarjiyaTech, where she could provide high-quality web development and digital marketing
-                                services that prioritize the client's needs and goals.
-                            </p>
-                            <p>
-                                Farjiya has a strong work ethic and is committed to delivering the best work possible.
-                                She understands the value of trust and transparency in building strong relationships
-                                with her clients. That's why she ensures that her clients are involved in the
-                                development process every step of the way, from the initial planning stages to the final
-                                product.
-                                Farjiya's dedication to her clients and her passion for digital media have earned her a
-                                reputation for delivering exceptional results. She is proud to have helped many
-                                businesses establish a strong online presence and achieve their digital goals through
-                                FarjiyaTech's services.
-                            </p>
-                            <p>
-                                At FarjiyaTech, we continue to uphold Farjiya's values and commitment to excellence in
-                                all our work. We are proud to have her as our founder and to continue providing
-                                high-quality web development and digital marketing services to our clients.
-                            </p>
-                        </div>
+                </div>
 
-                        <img src="images/profile-picture.jpg" alt="An image of a three tier birthday cake"
-                            class="img-fluid rounded-circle col-md-6 order-0">
+                <div class="row mt-5">
+                    <div class="col-md-6 team-member order-1 order-md-0 bg-warning" id="person-info">
+                        <h3 class="heading py-4">Farjiya BentaM</h3>
+                        <hr>
+                        <p>
+                            Farjiya is an immigrant from Bangladesh who came to Canada with a dream of becoming a
+                            web developer. She was determined to pursue her passion for digital media and create
+                            websites that are user-friendly, secure, and accessible by everyone.
+                            Despite facing many challenges as an immigrant, Farjiya worked hard to achieve her
+                            goals. She enrolled in Algonquin College's Interactive Media Design program, where she
+                            gained valuable experience in website design and UX design.
+                        </p>
+                        <p>
+                            During her studies, Farjiya developed a deep understanding of the importance of putting
+                            the client's needs first. She recognized that every business is unique and requires a
+                            tailored solution that meets their specific needs. This led her to establish
+                            FarjiyaTech, where she could provide high-quality web development and digital marketing
+                            services that prioritize the client's needs and goals.
+                        </p>
+                        <p>
+                            At FarjiyaTech, we continue to uphold Farjiya's values and commitment to excellence in
+                            all our work. We are proud to have her as our founder and to continue providing
+                            high-quality web development and digital marketing services to our clients.
+                        </p>
                     </div>
+
+                    <img src="images/profile-picture.jpg" alt="An image of the founder of the company"
+                        class="img-fluid rounded-circle col-md-6 order-0 border border-danger bg-dark" aria-details="person-info">
+
                 </div>
             </div>
 
@@ -166,10 +146,10 @@
 
             </div>
         </section>
-        <!--a section for holding mision and photogallary-->
+        <!--a section for holding photogallary-->
         <section class="mt-5">
             <div class="container-fluid">
-                <h3>My Photos</h3>
+                <h3 role="heading">My Photos</h3>
                 <hr>
                 <p>
                     In addition to her passion for web development and digital media, Farjiya has a keen interest in
@@ -181,7 +161,7 @@
             </div>
 
         </section>
-
+        <!--a section for holding photogallary-->
         <section>
             <div class="container my-5">
                 <div class="row text-center bg-dark">
@@ -204,27 +184,31 @@
             </div>
         </section>
     </main>
-    <hr>
-    <hr>
-    <hr>
+
 
     <!--adds footer of the webpage-->
     <footer role="contentinfo">
         <div class="text-light text-center mt-5 py-3 footer">
-            <p>&copy; All the rights Preserved. </p>
-            <p> Contents were created by
-                <a href="https://chat.openai.com" aria-label=" this link goes to ChatGPT website"> ChatGpt</a>
-            </p>
-            <p>Check our social media site:</p>
-            <p class="icons fs-1">
-                <i class="fa fa-facebook-square"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-whatsapp"></i>
-                <i class="fa fa-youtube-play"></i>
-            </p>
-            <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
-                <i class="fa fa-arrow-up fs-4 text-white"></i>
-            </a>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <p>&copy; All the rights Preserved. </p>
+                    <p> Contents were created by
+                        <a href="https://chat.openai.com" aria-label=" this link goes to ChatGPT website"> ChatGpt</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p> Check our social media:</p>
+                    <p class="icons fs-5">
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-whatsapp"></i>
+                        <i class="fa fa-youtube-play"></i>
+                    </p>
+                </div>
+                <a href="#top" class="text-white" aria-label="Goes back to the top"> Back to top
+                    <i class="fa fa-arrow-up fs-4 text-white"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
@@ -238,4 +222,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>
