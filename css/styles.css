@@ -10,20 +10,25 @@
     box-sizing: border-box;
 }
 
-
-.content-nav {
+/* font family through out the website */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.content-nav, .mission-vision{
     background-color: var(--color-light-red);
+}
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: #ffffff;
+    background-color: var(--color-red);
 }
 
 .contact{
     padding-bottom: 5rem;
 }
-.mission-vision {
-    background-color: var(--color-light-red);
-}
-.welcome{
-    color: var(--color-dark-red);
-}
+
 .value {
     background-color: rgba(255, 0, 0, .2);
 }
@@ -38,23 +43,14 @@
     position: absolute;
     bottom: 1.5rem;
     left: 35%;
-
 }
 
+.btn-danger{
+    background-color: var(--color-red);
+    color:#ffffff;
+}
 .footer {
     background-color: var(--color-dark-red);
     line-height: 1.15rem;   
 }
-
-
-.nav-link {
-    color: black;
-}
-
-.nav-link:hover {
-    color: #ffffff;
-    background-color: var(--color-red);
-}
-
-
 @media screen and (min-width: 48em) {}

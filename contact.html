@@ -16,54 +16,55 @@
     <!--css link-->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+
     <title> 👩🏻‍💻 Contact - farjiyatech </title>
 </head>
 
 <body>
     <!--adds header of the webpage-->
     <header role="banner">
-        <div class="nav-menu">
-            <!--adds the navigation of the page-->
-            <nav class="navbar navbar-expand-lg pt-0" role="navigation">
-                <div class="container-fluid content-nav">
-                    <a class="navbar-brand" href="index.html" aria-label="This link reloads the home page"> <img
-                            class="rounded-circle img-thumbnai" src="images/company-logo.png"
-                            alt="An image of company logo" height="60" width="60"></a>
+        <!--adds the navigation of the page using bootstrap nav component-->
+        <nav class="navbar navbar-expand-lg pt-0" role="navigation">
+            <div class="container-fluid content-nav">
+                <a class="navbar-brand" href="index.html" aria-label="This link reloads the home page"> <img
+                        class="rounded-circle img-thumbnai" src="images/company-logo.png" alt="An image of company logo"
+                        height="60" width="60"></a>
 
-                    <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"> </span>
-                        <i class="fa fa-navicon fs-1"></i></button>
+                <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                    <i class="fa fa-navicon text-black fs-1"></i></button>
 
-                    <div class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav text-center py-3">
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" aria-current="page" href="index.html"
-                                    aria-label="Goes to the home page">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="about.html" aria-label="Goes to the about page">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="contact.html"
-                                    aria-label="Goes to the contact page">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="https://farjiyao.github.io/bakeryshop-mtm6201/"
-                                    aria-label="Goes to previous work page">Work</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav text-center py-3">
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" aria-current="page" href="index.html"
+                                aria-label="Goes to the home page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="about.html" aria-label="Goes to the about page">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="contact.html"
+                                aria-label="Goes to the contact page">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="https://farjiyao.github.io/bakeryshop-mtm6201/"
+                                aria-label="Goes to previous work page">Work</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <!--adds the navigation of the page-->
-        </div>
+            </div>
+        </nav>
     </header>
 
-
-
-    <!--holds the main content of the page-->
+    <!--holds the main content of the page using bootstrap grid component-->
     <main class="mb-5 contact" role="main">
         <div class="container mt-5 mb-5">
             <div class="row ">
@@ -87,11 +88,11 @@
                     <div class="loc mt-5 mb-5">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.794823126314!2d-75.81035758444628!3d45.352953879099815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00e77e7bc705%3A0xcd769fee89fbe25f!2s230%20Woodridge%20Crescent%2C%20Nepean%2C%20ON%20K2B%208G2!5e0!3m2!1sen!2sca!4v1671577814532!5m2!1sen!2sca"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            width="100%" class="border border-dark-subtle"></iframe>
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
+                            class="border border-dark-subtle"></iframe>
                     </div>
                 </section>
-                
+
                 <div class="col-md-6 content mb-5">
                     <form action="mailto:farjiya.oishe21@gmail.com" class="py-4" method="POST"
                         enctype="multipart/form-data" name="EmailForm">
@@ -120,7 +121,7 @@
             </div>
         </div>
     </main>
-    
+
     <!--adds footer of the webpage-->
     <footer role="contentinfo">
         <div class="text-light text-center mt-5 py-3 footer fixed-bottom">
@@ -128,7 +129,8 @@
                 <div class="col-md-6 text-center">
                     <p>&copy; All the rights Preserved. </p>
                     <p> Contents were created by
-                        <a href="https://chat.openai.com" aria-label=" this link goes to ChatGPT website" class="text-white"> ChatGpt</a>
+                        <a href="https://chat.openai.com" aria-label=" this link goes to ChatGPT website"
+                            class="text-white"> ChatGpt</a>
                     </p>
                 </div>
                 <div class="col-md-6 text-center">
@@ -147,7 +149,7 @@
         </div>
     </footer>
 
-<!--bootstrap js link-->
+    <!--bootstrap js link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

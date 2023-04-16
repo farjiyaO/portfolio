@@ -19,45 +19,50 @@
     <!--AOS animation link-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+
     <title> 👩🏻‍💻 About-Farjiyatech</title>
 </head>
 
 <body>
     <!--adds header of the webpage-->
     <header role="banner">
-        <div class="nav-menu">
-            <!--adds the navigation of the page-->
-            <nav class="navbar navbar-expand-lg pt-0" role="navigation">
-                <div class="container-fluid content-nav">
-                    <a class="navbar-brand" href="index.html"> <img class="rounded-circle img-thumbnai"
-                            src="images/company-logo.png" alt="An image of the company logo" height="60" width="60"></a>
+        <!--adds the navigation of the page bootstrap grid component-->
+        <nav class="navbar navbar-expand-lg pt-0" role="navigation">
+            <div class="container-fluid content-nav">
+                <a class="navbar-brand" href="index.html"> <img class="rounded-circle img-thumbnai"
+                        src="images/company-logo.png" alt="An image of the company logo" height="60" width="60"></a>
 
-                    <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"> </span>
-                        <i class="fa fa-navicon" style="font-size:36px"></i></button>
+                <button class="navbar-toggler primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                    <i class="fa fa-navicon text-black fs-1"></i></button>
 
-                    <div class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav text-center py-3">
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="https://farjiyao.github.io/bakeryshop-mtm6201/ ">Work</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav text-center py-3">
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3" href="https://farjiyao.github.io/bakeryshop-mtm6201/ ">Work</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-            <!--adds the navigation of the page-->
-        </div>
+            </div>
+        </nav>
+        <!--adds the navigation of the page-->
+
     </header>
 
 
@@ -67,50 +72,88 @@
 
         <section class="container py-5">
             <div class="row g-5">
-                <img src="" alt=""
-                    class="img-fluid border border-danger rounded-3 col-md-6 px-0">
-                <div class="col-md py-3">
+                <picture class=" col-md-6 px-4 pt-5">
+                    <!--square image 720 -->
+                    <source srcset="images/company-background-480_x_270.jpg 1x,
+                                    images/company-background-960_x_540.jpg 2x,
+                                    images/company-background-1440_x_810.jpg 3x" media="(min-width: 960px)" />
+
+                    <!--square image 960 -->
+                    <source srcset="images/company-background-640_x_360.jpg 1x,
+                                    images/company-background-1280_x_720.jpg 2x,
+                                    images/company-background-1920_x_1080.jpg 3x" media="(min-width: 1280px)" />
+
+                    <!--landscape image 480 -->
+                    <source srcset="images/company-background-480_x_270.jpg 1x,
+                                    images/company-background-960_x_540.jpg 2x,
+                                    images/company-background-1440_x_810.jpg 3x" media="(max-width: 480px)" />
+                    <!--landscape image 720 -->
+                    <source srcset="images/company-background-720_x_600.jpg 1x,
+                      images/company-background-1440_x_810.jpg 2x,
+                      images/company-background-1920_x_1080.jpg 3x" media="(max-width: 720px)" />
+
+                    <img src="images/company-background-960_x_540.jpg"
+                        alt="An image of contaning some blocks and HTML written "
+                        class="img-fluid border border-danger rounded-3 mx-auto d-block">
+                </picture>
+
+                <div class="col-md pt-0">
                     <h3>Company Background</h3>
                     <hr class="border border-danger ">
-                    <p>FarjiyaTech was founded in 2022 by Farjiya, an Algonquin College graduate in Interactive Media
+                    <p>FarjiyaTech was founded in 2022 by Farjiya, an Algonquin College graduate in Interactive
+                        Media
                         Design. The company was established with the goal of helping businesses establish a strong
                         online presence and leverage the power of digital marketing.
                     </p>
                     <p>
-                        After graduating from Algonquin College, Farjiya founded FarjiyaTech to help businesses harness
-                        the power of digital media. The company started with just a few clients, but it quickly grew as
-                        Farjiya's reputation for high-quality work spread. As the company expanded, Farjiya brought on a
-                        team of talented designers, developers, and digital marketers who shared her vision and passion
-                        for digital media. Together, they worked to create unique and effective solutions for their
-                        clients, ranging from small startups to large corporations.
-                    </p>
-                    <p>
-                        Today, FarjiyaTech is a leading provider of website design, logo design, UX design, and digital
+                        Today, FarjiyaTech is a leading provider of website design, logo design, UX design, and
+                        digital
                         marketing services. The company has helped numerous businesses establish a strong online
                         presence and grow their brand through effective digital marketing strategies.</p>
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md order-1 order-md-0 py-3 ">
+            <div class="row mt-3">
+                <div class="col-md order-1 order-md-0 py-0">
                     <h3>Farjiya BentaM</h3>
                     <hr class="border border-danger ">
                     <p>Farjiya is an immigrant from Bangladesh who came to Canada with a dream of becoming a web
-                        developer. She was determined to pursue her passion for digital media and create websites that
+                        developer. She was determined to pursue her passion for digital media and create websites
+                        that
                         are user-friendly, secure, and accessible by everyone.</p>
-                    <p>Farjiya's dedication to her clients and her passion for digital media have earned her a
-                        reputation for delivering exceptional results. She is proud to have helped many businesses
-                        establish a strong online presence and achieve their digital goals through FarjiyaTech's
-                        services.</p>
                     <p>
                         As the company expanded, Farjiya brought on a team of talented designers, developers, and
-                        digital marketers who shared her vision and passion for digital media. Together, they worked to
-                        create unique and effective solutions for their clients, ranging from small startups to large
+                        digital marketers who shared her vision and passion for digital media. Together, they worked
+                        to
+                        create unique and effective solutions for their clients, ranging from small startups to
+                        large
                         corporations.
                     </p>
                 </div>
-                <img src="images/profile-picture.jpg" alt="An image of Farjiya, the company founder"
-                    class="img-fluid border border-danger rounded-3 col-md-6 order-0 order-md-1 px-0">
+                <picture class="col-md-6 order-0 order-md-1 px-2 py-2">
+                    <!--square image 720 -->
+                    <source srcset="images/profile-picture-480_x_270.jpg 1x,
+                                    images/profile-picture-960_x_540.jpg 2x,
+                                    images/profile-picture-1440_x_810.jpg 3x" media="(min-width: 960px)" />
+
+                    <!--square image 960 -->
+                    <source srcset="images/profile-picture-640_x_360.jpg 1x,
+                                    images/profile-picture-1280_x_720.jpg 2x,
+                                    images/profile-picture-1920_x_1080.jpg 3x" media="(min-width: 1280px)" />
+
+                    <!--landscape image 480 -->
+                    <source srcset="images/profile-picture-480_x_270.jpg 1x,
+                                    images/profile-picture-960_x_540.jpg 2x,
+                                    images/profile-picture-1440_x_810.jpg 3x" media="(max-width: 480px)" />
+                    <!--landscape image 720 -->
+                    <source srcset="images/profile-picture-720_x_600.jpg 1x,
+                      images/profile-picture-1440_x_810.jpg 2x,
+                      images/profile-picture-1920_x_1080.jpg 3x" media="(max-width: 720px)" />
+
+
+                    <img src="images/profile-picture-960_x_540.jpg" alt="An image of Farjiya, the company founder"
+                        class="img-fluid border border-danger rounded-3 mx-auto d-block my-5">
+                </picture>
             </div>
         </section>
 
@@ -125,35 +168,19 @@
             </div>
         </section>
 
-        <!--a section for holding paragraph-->
-        <section class="mt-5">
-            <div class="container-fluid">
-                <h3 role="heading">My Photos</h3>
-                <hr>
-                <p>
-                    In addition to her passion for web development and digital media, Farjiya has a keen interest in
-                    photography. She enjoys capturing beautiful moments and creating art through her camera lens.
-                    Farjiya's photography reflects her eye for detail and her ability to see the beauty in the world
-                    around her. Whether she is exploring new landscapes or capturing candid shots of people,
-                    Farjiya's photography showcases her creative vision and passion for visual storytelling.
-                </p>
-            </div>
-
-        </section>
-
 
         <!--a section for holding photogallary-->
-        <section>
-            <div class="container my-5">
-                <div class="row text-center bg-dark">
-                    <div class="col-md-6 bg-warning py-2 " data-aos="zoom-in">   
+        <section class="mt-5">
+            <h3 role="heading" class="text-center mb-3">My Photos</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bg-warning py-2 " data-aos="zoom-in">
                         <picture>
                             <source srcset="images/img-6-480_x_319.JPG 1x,
                                             images/img-6-720_x_576.JPG 2x,
-                                            images/img-6-960_x_768.JPG 3x"
-                                            media="(min-width: 760px)" />
-                            <img src="images/img-6-720_x_576.JPG" class="d-block w-100"
-                            alt="An image of the front yard of the company">
+                                            images/img-6-960_x_768.JPG 3x" media="(min-width: 760px)" />
+                            <img src="images/img-6-720_x_576.JPG" class="d-block w-100 border border-danger"
+                                alt="An image of the front yard of the company">
                         </picture>
                     </div>
 
@@ -161,10 +188,9 @@
                         <picture>
                             <source srcset="images/img-7-480_x_319.JPG 1x,
                                             images/img-7-720_x_576.jpg 2x,
-                                            images/img-7-960_x_768.jpg 3x"
-                                            media="(min-width: 760px)" />
-                            <img src="images/img-7-720_x_576.jpg" class="d-block w-100"
-                            alt="An image of the Spritual center of the company">
+                                            images/img-7-960_x_768.jpg 3x" media="(min-width: 760px)" />
+                            <img src="images/img-7-720_x_576.jpg" class="d-block w-100 border border-danger"
+                                alt="An image of the Spritual center of the company">
                         </picture>
                     </div>
 
@@ -172,27 +198,26 @@
                         <picture>
                             <source srcset="images/img-9-480_x_319.jpg 1x,
                                             images/img-9-720_x_576.jpg 2x,
-                                            images/img-9-960_x_768.jpg 3x"
-                                    media="(min-width: 760px)" />
-                            <img src="images/img-9-720_x_576.jpg" class="d-block w-100"
-                            alt="A night image of the company frontyard ">
+                                            images/img-9-960_x_768.jpg 3x" media="(min-width: 760px)" />
+                            <img src="images/img-9-720_x_576.jpg" class="d-block w-100 border border-danger"
+                                alt="A night image of the company frontyard ">
                         </picture>
                     </div>
 
                     <div class="col-md-6 bg-warning py-2" data-aos="zoom-in">
-                        
+
                         <picture>
                             <source srcset="images/img-11-480_x_319.JPG 1x,
                                             images/img-11-720_x_576.JPG 2x,
-                                            images/img-11-960_x_768.JPG 3x"
-                                            media="(min-width: 760px)" />
-                            <img src="images/img-11-720_x_576.JPG" class="d-block w-100"
-                            alt="An image of the company garden">
+                                            images/img-11-960_x_768.JPG 3x" media="(min-width: 760px)" />
+                            <img src="images/img-11-720_x_576.JPG" class="d-block w-100 border border-danger"
+                                alt="An image of the company garden">
                         </picture>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
 
