@@ -13,7 +13,8 @@ This website's creation process was tough and fascinating all at once. The entir
 * FontAwesome: https://www.w3schools.com/icons/fontawesome_icons_intro.asp
 * Bootstrap: http://getbootstrap.com/
 * Animation on Scroll: https://michalsnik.github.io/aos/
-* Some images from: https://pixabay.com
+* Some images in Home & About page are from: https://pixabay.com
+  
 * Font : https://fonts.google.com
 
 
