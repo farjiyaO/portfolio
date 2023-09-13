@@ -14,7 +14,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-.content-nav, .mission-vision{
+.mission-vision{
     background-color: var(--color-light-red);
 }
 .nav-link {
