@@ -1,8 +1,8 @@
 :root {
-    --color-light-red: #f2768f;
-    --color-red: #F50303;
-    --color-dark-red: #2D1E2F;
-    --color-hover: #BF0F0F
+    --color-light-red: rgb(242, 118, 143);
+    --color-red: rgb(245, 3, 3);
+    --color-dark-red: rgb(45, 30, 47);
+    --color-hover: rgb(191, 15, 15);
 }
 
 /* defeat box model */
@@ -14,43 +14,115 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-.mission-vision{
+
+.content-nav {
+    background-color: rgba(242, 118, 143, 0.3);
+}
+
+.mission-vision {
     background-color: var(--color-light-red);
 }
+
 .nav-link {
     color: black;
 }
+
 .nav-link:hover {
     color: #ffffff;
-    background-color: var(--color-red);
+    background-color: var(--color-hover);
+    border-radius: 10px;
 }
 
-.contact{
+.title-headings{
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color: var(--color-dark-red);
+
+}
+.sub-heading{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
+    color:var(--color-dark-red);
+    font-size: 1.25rem;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.fade-in-image { 
+    animation: fadeIn 5s infinite; 
+}
+.card-title{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+.welcome{
+    font-family: 'Yeseva One', cursive;
+    font-size: 3.7rem;
+    color: #561b55;   
+}
+.welcome-img{
+    width: 90%;
+   margin: 0 auto;
+    
+}
+.welcome-img img{
+    width: 400px;
+    height: 400px;
+}
+.contact {
     padding-bottom: 5rem;
 }
-
+.img-2-row{
+    width: 100%;
+    height: 100%;
+}
+.img-1-row{
+    width: 100%;
+}
 .value {
     background-color: rgba(255, 0, 0, .2);
+    font-family: 'Yeseva One', cursive;
+    
 }
-.content {
-    background-color: rgba(242, 118, 143, 0.5)
+.value h3{
+    font-size: 1.2rem;
+}
+.value p{
+    font-size: 2rem;
+}
+.web-works{
+    text-align: right;
+    text-decoration: none;
+}
+.web-works a:hover{
+    text-decoration: underline;
+    font-size: 1.1rem;
 }
 
-.card-body{
+.content {
+    background-color: rgba(242, 118, 143, 0.5);
+}
+.card-body {
     position: relative;
 }
-.card-btn{
+
+.card-btn {
     position: absolute;
     bottom: 1.5rem;
     left: 35%;
 }
 
-.btn-danger{
+.btn-danger {
     background-color: var(--color-red);
-    color:#ffffff;
+    color: #ffffff;
 }
+
 .footer {
     background-color: var(--color-dark-red);
-    line-height: 1.15rem;   
+    line-height: 1.15rem;
 }
+
 @media screen and (min-width: 48em) {}
